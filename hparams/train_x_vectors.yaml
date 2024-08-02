@@ -6,12 +6,12 @@
 # Basic parameters
 seed: 1970
 __set_seed: !apply:torch.manual_seed [!ref <seed>]
-output_folder: !ref C:\Users\julen\OneDrive\Escritorio\TFG Electro\TFG\TFG\Results\xvector_utt_reduct\<seed>
+output_folder: \Results\xvector_utt_reduct\<seed>
 save_folder: !ref <output_folder>\save
 train_log: !ref <output_folder>\train_log.txt
 
 # Data files
-data_folder: C:\Users\julen\OneDrive\Escritorio\TFG Electro\TFG\TFG\Datasets\VoxCeleb1_utterance_reduct\dev  # e.g. /path/to/Voxceleb
+data_folder: \Datasets\VoxCeleb1_utterance_reduct\dev  # e.g. /path/to/Voxceleb
 train_annotation: !ref <save_folder>\train.csv
 valid_annotation: !ref <save_folder>\dev.csv
 
@@ -19,7 +19,7 @@ valid_annotation: !ref <save_folder>\dev.csv
 rir_folder: !ref <data_folder> # Change it if needed
 
 # Verification file
-verification_file: C:\Users\julen\OneDrive\Escritorio\TFG Electro\TFG\TFG\veri_tests\veri_test2.txt
+verification_file: \veri_tests\veri_test2.txt
 
 split_ratio: [90, 10]
 skip_prep: False
